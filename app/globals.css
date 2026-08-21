@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #12100E;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(237, 234, 228, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+  color: #EDEAE4;
+}
+
+::selection {
+  background: #D98E4A44;
+}
+
+:focus-visible {
+  outline: 2px solid #D98E4A;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

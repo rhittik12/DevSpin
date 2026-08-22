@@ -18,7 +18,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </Link>
             <nav className="flex gap-6 font-mono text-sm text-muted">
               <Link href="/" className="hover:text-paper">Today</Link>
-              <Link href="/history" className="hover:text-paper">History</Link>
               <Link href="/all" className="hover:text-paper">Browse</Link>
             </nav>
           </header>

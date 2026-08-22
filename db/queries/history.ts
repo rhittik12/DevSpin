@@ -1,1 +1,0 @@
-// Stub: history queries

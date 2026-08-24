@@ -8,7 +8,7 @@ import { standaloneTopics } from "./data/standalone-topics";
 const seed = async () => {
     await db.delete(topics);
 
-    const rows: any[] = [];
+    const rows: (typeof topics.$inferInsert)[] = [];
 
     techTopics.forEach((topic) => {
         concepts.forEach((concept) => {

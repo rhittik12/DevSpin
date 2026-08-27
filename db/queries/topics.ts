@@ -20,3 +20,13 @@ export const markTopicAsUsed = async (topicId: number) => {
 
     return result;
 }
+
+export const getTopicById = async (topicId: number) => {
+    const topic = await db
+        .select()
+        .from(topics)
+        .where(eq(topics.id, topicId))
+        .limit(1);
+    
+    return topic[0] || null;
+}

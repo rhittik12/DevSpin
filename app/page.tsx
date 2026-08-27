@@ -4,8 +4,8 @@ import { useState } from "react";
 import { TopicCard } from "@/components/topic-card";
 import { SpinButton } from "@/components/spin-button";
 import { Button } from "@/components/ui/button";
-import { fakeTodayTopic, fakeStreak } from "@/lib/fake-data";
 import { Topic } from "@/lib/types";
+import { spinTopic } from "./actions/spin";
 
 export default function HomePage() {
   const [topic, setTopic] = useState<Topic | null>(null);
@@ -15,8 +15,8 @@ export default function HomePage() {
 
   // Placeholder for the real server action call: await spinTopic()
   const handleSpin = async () => {
-    await new Promise((r) => setTimeout(r, 600));
-    setTopic(fakeTodayTopic);
+    const newTopic = await spinTopic();
+    setTopic(newTopic);
   };
 
   // Placeholder for the real server action call: await markCovered(topic.id, blogUrl)
@@ -29,7 +29,7 @@ export default function HomePage() {
     <div className="flex flex-col gap-8 pt-8">
       <div className="flex items-center justify-between">
         <p className="font-mono text-sm text-muted">Today's crossing</p>
-        <p className="font-mono text-sm text-copper">{fakeStreak} day streak</p>
+        <p className="font-mono text-sm text-copper">0 day streak</p>
       </div>
 
       {topic ? (

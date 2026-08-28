@@ -4,6 +4,8 @@ A random tech topic generator to fuel a daily blog-writing habit. Hit spin, get 
 
 No login. No history. No tracking. Just an honest random topic generator.
 
+<img width="1912" height="928" alt="Screenshot 2026-08-28 191355" src="https://github.com/user-attachments/assets/c7cc0a4b-796e-462a-ac6a-d6553f9b3179" />
+
 ## How it works
 
 DevSpin holds a bank of topics in Postgres, built by crossing technologies (React, PostgreSQL, Docker, etc.) with concepts (caching, testing, load balancing, etc.) within matching domains, plus a set of standalone systems-design topics (CAP Theorem, Microservices, OAuth 2.0, and similar). Every spin is a fully random pick from the whole bank.

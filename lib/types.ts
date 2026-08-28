@@ -9,12 +9,5 @@ export type TopicDomain =
 export interface Topic {
   id: string;
   title: string;
-  shape: TopicShape;
   domain: TopicDomain;
-  technology?: string;
-  technology2?: string;
-  concept?: string;
-  covered: boolean;
-  coveredAt?: string;
-  blogUrl?: string;
 }

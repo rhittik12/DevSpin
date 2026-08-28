@@ -82,11 +82,18 @@ lib/
   types.ts                            # Shared Topic type
 ```
 
+
 ## Contributing
 
 Contributions are welcome — this is a small project and a good one to get your feet wet with Next.js, Drizzle, or just adding more topics.
 
-**Easiest way to contribute:** add more entries to `scripts/data/technologies.ts`, `concepts.ts`, or `standalone-topics.ts`, then run `npm run seed` locally to confirm it generates sensible topics before opening a PR. Keep the domain tags consistent with the existing entries — a technology and a concept only get crossed together if they share a domain, so mismatched tags produce topics that never get generated.
+**1. Grow the topic bank (easiest way to contribute)**
+
+Add more entries to `scripts/data/technologies.ts`, `concepts.ts`, or `standalone-topics.ts`, then run `npm run seed` locally to confirm it generates sensible topics before opening a PR. Keep the domain tags consistent with the existing entries — a technology and a concept only get crossed together if they share a domain, so mismatched tags produce topics that never get generated.
+
+**2. Improve the product**
+
+Have an idea for how DevSpin could be better — UI, performance, features, code quality, anything? Just raise a PR for it.
 
 **To contribute code:**
 
@@ -96,12 +103,6 @@ Contributions are welcome — this is a small project and a good one to get your
 4. Commit: `git commit -m "Add: short description"`
 5. Push: `git push origin feature/your-feature-name`
 6. Open a pull request
-
-**Ideas for contributions:**
-- More technologies, concepts, or standalone topics in `scripts/data/`
-- UI polish or accessibility improvements
-- New crossing "shapes" beyond the current pair/single/standalone logic
-- Bug fixes
 
 Please keep PRs focused — one change per PR is easier to review than a bundle of unrelated changes.
 

@@ -4,10 +4,29 @@ import "./globals.css";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Topic Spinner",
-  description: "Daily random topic generator for your blog habit",
+  title: "DevSpin",
+  description: "A random tech topic generator to fuel a daily blog habit and learning.",
   icons: {
     icon: "/favicon.svg",
+  },
+  openGraph: {
+    title: "DevSpin",
+    description: "A random tech topic generator to fuel a daily blog habit and learning.",
+    url: "https://dev-spin.vercel.app/",
+    siteName: "DevSpin",
+    images: [
+      {
+        url: "/og-image_2.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DevSpin",
+    description: "A random tech topic generator to fuel a daily blog habit and learning.",
+    images: ["/og-image_2.png"],
   },
 };
 

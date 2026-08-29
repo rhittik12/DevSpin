@@ -6,6 +6,9 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "DevSpin",
   description: "A random tech topic generator to fuel a daily blog habit and learning.",
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "DevSpin",
     description: "A random tech topic generator to fuel a daily blog habit and learning.",

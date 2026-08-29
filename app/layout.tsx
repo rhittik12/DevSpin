@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Topic Spinner",
@@ -25,6 +26,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </header>
           <main className="flex-1 pb-16">{children}</main>
         </div>
+        <Script
+          async
+          src="https://cloud.umami.is/script.js"
+          data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
+        /> 
       </body>
     </html>
   );

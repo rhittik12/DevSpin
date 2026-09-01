@@ -44,6 +44,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </nav>
           </header>
           <main className="flex-1 pb-16">{children}</main>
+          <footer className="flex justify-center border-t border-line py-8">
+            <a
+              href="https://productwatch.io/products/devspin?utm_source=badge"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="DevSpin featured on ProductWatch"
+              className="transition-opacity hover:opacity-90 focus-visible:rounded"
+            >
+              <img
+                src="https://productwatch.io/backend/api/v1/badge/featured?productId=993bb4b5-0789-4e69-bab1-3b7a014e7d9b&darkMode=false"
+                alt="DevSpin"
+                className="h-auto w-full max-w-[250px]"
+                style={{ maxWidth: "250px" }}
+              />
+            </a>
+          </footer>
         </div>
         <Script
           async
